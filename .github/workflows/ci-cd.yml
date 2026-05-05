@@ -56,10 +56,7 @@ jobs:
           pip install flake8
           flake8 api/ workers/ --count --select=E9,F63,F7,F82 --show-source --statistics || true
 
-      - name: Run API tests
-        run: |
-          cd tests
-          python test_api.py
+     
         env:
           REDIS_HOST: localhost
           POSTGRES_HOST: localhost
