@@ -56,3 +56,7 @@ htmlcov/
 # VS Code
 .vscode/settings.json
 .vscode/launch.json
+
+# Allow monitoring directory
+!monitoring/
+!monitoring/prometheus.yml
